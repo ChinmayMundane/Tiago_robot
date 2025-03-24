@@ -42,6 +42,13 @@ rviz2
 Now click on add, then `RobotModel` in 'by display type' bar which will add that topic in rviz panel.
 It will look like this, Also select `base_link` in `Fixed frame`. ![image](https://github.com/user-attachments/assets/0e822556-a12d-4d06-baf4-d373f396c61f)
 
+
+
+
+
+
+
+
 But Why is rviz empty? Because we haven't yet defined topic. Just Extend the RobotModel, click of Description topic and choose `/robot_description`.
 Voila! your robot will appear in rviz.
 Like this.![image](https://github.com/user-attachments/assets/098638a8-b09d-4efa-ba88-50e3ba914259)
@@ -62,13 +69,18 @@ git clone https://github.com/ChinmayMundane/Tiago_robot.git
 cd Tiago_robot
 python3 pinocchio_analyzer.py
 ```
+## Result
 You will see Result like this
 ![image](https://github.com/user-attachments/assets/034839f4-2b89-4344-8457-f219b4cfb012)
+
+## Issue
 
 Now, If you look closely at the ouput, you will see 0 collision pairs even when we have them in our urdf. This is because when launching the world, collision geometry is hidden which makes it unable to detect any collision between pairs although you can add one manually which I did.
 
 ![image](https://github.com/user-attachments/assets/46137247-1dae-420d-940b-f19ec7cb4f79)
 
+
+## Author Simulation
 
 This is not the issue on my side only, The original author also had similar warnings when I saw their running example which means it must be some native issue in harmonic.
 ![image](https://github.com/user-attachments/assets/cd76656b-df1a-4700-ba9d-1897ba90dadc)
