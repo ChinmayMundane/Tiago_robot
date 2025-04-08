@@ -4,7 +4,7 @@ This document provides the commands and file structure to install and view the `
 
 ## Prerequisites
 
-- Ubuntu 22.04 LTS
+- Ubuntu 24.04 LTS
 - ROS 2 Jazzy
 - Gazebo Harmonic (gz-sim8)
 - Tiago Hamonic model
